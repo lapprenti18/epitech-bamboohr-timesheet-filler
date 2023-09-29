@@ -126,7 +126,7 @@ async function main()
         await page.type('#fabricModalContent > div > form > div:nth-child(2) > div > div:nth-child(3) > div > input', '6:00');
     
         // Save the entries
-        await page.click('.actions--2ohA0 > button');
+        await page.click('.legacyModal__actions > button:nth-child(1)');
       } catch (e) {
         console.log(`⚠️ Cannot create entries for ${formattedDay} ${i + 1}`);
       }
